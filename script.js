@@ -16,10 +16,13 @@ buttonArray.forEach(function(button) {
             document.body.style.backgroundColor='red'
          }
          if(e.target.id=='blue-btn'){
-            document.body.style.backgroundColor='blue'
+            document.body.style.backgroundColor='lightblue'
          }
          if(e.target.id=='yellow-btn'){
             document.body.style.backgroundColor='yellow'
+         }
+         if(e.target.id=='purple-btn'){
+            document.body.style.backgroundColor='purple'
          }
     });
 });
