@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Background Color Switcher</title>
     
-    <style>
-        .grey-btn {
-            background-color: rgb(52, 49, 49);
+    <style >
+        
+        #grey-btn {
+            background-color: grey;
         }
-        .white-btn {
-            background-color: rgb(255, 255, 255);
+        #red-btn {
+            background-color:red;
         }
-        .blue-btn {
-            background-color: rgb(66, 66, 228);
+        #blue-btn {
+            background-color:blue;
         }
-        .yellow-btn {
+        #yellow-btn {
             background-color: rgb(206, 206, 90);
         }
     </style>
 </head>
 <body>
-    <script src="script.js"></script>
+   
     
 
     <div class="canvas">
         <h1>Theme Switcher</h1>
-        
-        <button class="button" id="grey-btn">Grey Button</button>
-        <button class="button" id="white-btn">White Button</button>
-        <button class="button" id="blue-btn">Blue Button</button>
-        <button class="button" id="yellow-btn">Yellow Button</button>
-
-
+        <div class="colorBox">
+        <button class="HTMLbutton" id="grey-btn" style="height: 80px; width:80px;">Grey Button</button>
+        <button class="HTMLbutton" id="red-btn" style="height: 80px; width:80px;">red Button</button>
+        <button class="HTMLbutton" id="blue-btn" style="height: 80px; width:80px;">Blue Button</button>
+        <button class="HTMLbutton" id="yellow-btn" style="height: 80px; width:80px;">Yellow Button</button>
+    </di
         <h2> Try clicking on the above colors
         to change the background color of this page!!
         </h2>
@@ -42,5 +43,6 @@
     </div>
     
 </body>
+<script src="script.js"></script>
 
 </html>
