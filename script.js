@@ -1,16 +1,27 @@
-const buttons=document.querySelectorAll(".button")
+const buttons = document.getElementsByClassName('HTMLbutton');
 console.log(buttons);
 
-const body=document.querySelector("body")
-//console.log(body);
+// Convert the collection to an array
+const buttonArray = Array.from(buttons);
 
-buttons.forEach(function(button){
+buttonArray.forEach(function(button) {
     console.log(button);
-
-
-    button.addEventListener('click',function(e){
-        // console.log(e);
-        // console.log(e.target);
-       if(e.targer.id) 
-    })
+    button.addEventListener('click', function(e) {
+         //console.log(e);
+         console.log(e.target);
+         if(e.target.id=='grey-btn'){
+            document.body.style.backgroundColor='grey'
+         }
+         if(e.target.id=='red-btn'){
+            document.body.style.backgroundColor='red'
+         }
+         if(e.target.id=='blue-btn'){
+            document.body.style.backgroundColor='blue'
+         }
+         if(e.target.id=='yellow-btn'){
+            document.body.style.backgroundColor='yellow'
+         }
+    });
 });
+
+    
